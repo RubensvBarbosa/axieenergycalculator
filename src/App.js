@@ -66,7 +66,7 @@ const App = () => {
                          return setCount(count + 2)
 
                      }
-                     if (count == 9){
+                     if (count  > 8 && count < 10){
                         return setCount(count + 1)
                      }
                      else{
