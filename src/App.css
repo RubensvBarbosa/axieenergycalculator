@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body{
+    background: #242735!important;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.Container{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    width: 348px;
+    height: 628px;
+    text-align: center;
+    background:rgba(0,0,0,.25);
+    border-radius: 30px;
+    padding: 0px 60px 60px 60px;
+
+}
+.titulo{
+    float: left;
+    width: 100%;
+    color: #FFF!important;
+    text-align: center;
+    margin: 10px 0;
+    text-transform: uppercase;
+    border-bottom: solid 1px rgba(255,255,255,.25);
+    
+}
+
+/* ---------------------------------------------- */
+
+.result{
+    
+    display: inline-grid;
+    grid-template-columns: 3fr 1fr;
+    grid-column-gap: 13px;
+    margin-left: 14%;   
+    margin: 18% 0 19% 10%;    
+}
+
+input[type="text"]{
+    height:150px;
+    width: 135px;
+    border:0px ;
+    background-color: #242735;
+    color: #ffffff;
+    text-align: center;
+    font-size:100px;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    border-radius: 15px;
+    font-family: "Roboto",sans-serif;
+    
+}
+
+button{
+    border-radius: 15px;
+    border:0px;
+    font-family: "Roboto",sans-serif;
+    font-size: 20px;
+    color: 	#242735;
+}
+
+.buttonInc{
+    height: 48px;
+    margin: 25px 0px 0px 0px;
+    background-image: url( 'https://energycounter.slphunters.com/static/media/plus_btn.b55cf8ac.png' );
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    background-size: cover;
+    background-color: transparent; /* make the button transparent */
+    border:0px
+    
+}
+.buttonDec{
+    height: 43px;
+    margin: 0px 0px 10px;
+    background-image: url( 'https://energycounter.slphunters.com/static/media/minus_btn.38d068c2.png' );
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent; /* make the button transparent */
+    border:0px
+}
+
+
+/* ---------------------------------------------- */
+
+.keypad{
+    display: grid;
+    width: 60%;
+    margin-left: 19%;
+    grid-row-gap: 15px;
+    grid-template-rows: 5vh 5vh;
+}
+
+
+h1 {
+    font-size: 60px;
+    margin: 33px 0;
+    font-family: "Press Start 2P";
+}
+
+h2 {
+    font-size: 28px;
+    margin: 0;
+    font-family: "Roboto",sans-serif;
+
+}
+
+h3 {
+    font-size: 11px;
+    margin: 2px 0px 40px 0px;
+    font-family: "Roboto",sans-serif;
+
+}
