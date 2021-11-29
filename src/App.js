@@ -28,14 +28,30 @@ const App = () => {
 
                 <input type="text" value = {count} />
                 <button 
-                 onClick={() => setCount(count + 1)}
+                 onClick={() => {
+                     if (count < 10){
+                         return setCount(count + 1)
+
+                     }else{
+                         return setCount(count + 0)
+                     }
+                    
+                }}
                  className="buttonInc"
                  >
                      
                  </button>
 
                 <button 
-                onClick={() => setCount(count - 1)}
+                onClick={() => {
+                    if (count > 0){
+                        return setCount(count - 1)
+
+                    }else{
+                        return setCount(count - 0)
+                    }
+                   
+               }}
                 className="buttonDec"
                 >
                                         
@@ -45,7 +61,21 @@ const App = () => {
 
 
             <div className="keypad">
-                <button onClick={() => setCount(count + 2)} >Fim da rodada</button>
+                <button onClick={() => {
+                     if (count < 9){
+                         return setCount(count + 2)
+
+                     }
+                     if (count == 9){
+                        return setCount(count + 1)
+                     }
+                     else{
+                         return setCount(count + 0)
+                     }
+                    
+                }} >
+                    Fim da rodada
+                    </button>
                 <button onClick={reset} >Fim do jogo</button>
             </div>
         </div>
